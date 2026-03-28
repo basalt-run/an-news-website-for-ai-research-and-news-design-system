@@ -1,0 +1,838 @@
+{
+  "$schema": "https://basalt.run/schemas/manifest.json",
+  "version": "1.0.0",
+  "generatedAt": "2026-03-28T03:18:50.553Z",
+  "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+  "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+  "projectName": "basalt-run/an-news-website-for-ai-research-and-news-design-system",
+  "storybookCompatible": true,
+  "components": {
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert",
+      "name": "Alert",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert--info",
+          "name": "info",
+          "snippet": "const Info = () => <Alert variant=\"info\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert--success",
+          "name": "success",
+          "snippet": "const Success = () => <Alert variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Alert variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-alert--error",
+          "name": "error",
+          "snippet": "const Error = () => <Alert variant=\"error\" />;"
+        }
+      ],
+      "import": "import { Alert } from \"@your-org/design-system\";",
+      "description": "Alert communicates a message with contextual importance, combining color, iconography, and typography to establish visual hierarchy.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"info\" | \"success\" | \"warning\" | \"error\"",
+          "description": "Visual variant",
+          "defaultValue": "info"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Alert when you need to inform users about state changes, system status, or required actions that demand attention without blocking workflow. Use info for neutral updates like feature announcements, success for completed operations like subscription confirmations, warning for potentially harmful but reversible actions like data deletion, and error for critical failures that prevent task completion. Place Alerts persistently in the viewport or at the point where context matters most—a network error Alert near the affected form field carries more weight than one buried in a sidebar.",
+        "never": "Don't use Alert as a confirmation dialog for destructive actions — it lacks the friction and explicit consent model needed for irreversible operations. Use Modal instead.",
+        "a11y": "Alert must have role=\"alert\" (or role=\"status\" for non-urgent updates) to ensure assistive technology announces the message immediately to users, meeting WCAG 4.1.3 Status Messages.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-avatar": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-avatar",
+      "name": "Avatar",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-avatar--default",
+          "name": "default",
+          "snippet": "const Default = () => <Avatar />;"
+        }
+      ],
+      "import": "import { Avatar } from \"@your-org/design-system\";",
+      "description": "Avatar displays a user's profile image or initials in a circular container.",
+      "props": {},
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Avatar to represent users in lists, comments, team rosters, and account menus. When a profile image is unavailable, Avatar automatically renders initials extracted from the user's name. Choose Avatar over raw images to maintain consistent sizing, fallback behavior, and presence indicators across your interface.",
+        "never": "Don't stretch or distort the Avatar by setting arbitrary aspect ratios — this breaks the circular affordance and confuses users about identity. Use Image with explicit aspect-ratio constraint instead.",
+        "a11y": "Set role=\"img\" and provide an accessible name via aria-label (e.g., \"aria-label='Sarah Chen'\") to expose the user identity to screen readers when Avatar appears without adjacent text labels.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge",
+      "name": "Badge",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge--default",
+          "name": "default",
+          "snippet": "const Default = () => <Badge />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge--success",
+          "name": "success",
+          "snippet": "const Success = () => <Badge variant=\"success\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge--warning",
+          "name": "warning",
+          "snippet": "const Warning = () => <Badge variant=\"warning\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge--error",
+          "name": "error",
+          "snippet": "const Error = () => <Badge variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-badge--info",
+          "name": "info",
+          "snippet": "const Info = () => <Badge variant=\"info\" />;"
+        }
+      ],
+      "import": "import { Badge } from \"@your-org/design-system\";",
+      "description": "Badge displays a small, labeled status indicator using semantic color and typography.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"success\" | \"warning\" | \"error\" | \"info\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Badge to denote status, category, or metadata that requires visual prominence without interactive behavior. Examples include workflow states in list views (\"In Review\", \"Approved\"), priority levels in task management, or feature flags in settings. Badge should occupy minimal space while remaining scannable at a glance.",
+        "never": "Don't use Badge to replace Button when the element requires interaction — interactive states and affordances would be obscured. Use Button with a visual style that matches your intent instead.",
+        "a11y": "Badge must have role=\"status\" or be wrapped in an element with role=\"status\" to announce changes to assistive technology; static badges require no role.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-button": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-button",
+      "name": "Button",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-button--primary",
+          "name": "primary",
+          "snippet": "const Primary = () => <Button variant=\"primary\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-button--neutral",
+          "name": "neutral",
+          "snippet": "const Neutral = () => <Button variant=\"neutral\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-button--ghost",
+          "name": "ghost",
+          "snippet": "const Ghost = () => <Button variant=\"ghost\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-button--danger",
+          "name": "danger",
+          "snippet": "const Danger = () => <Button variant=\"danger\" />;"
+        }
+      ],
+      "import": "import { Button } from \"@your-org/design-system\";",
+      "description": "Button initiates actions or navigates within a product when clicked or activated via keyboard.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"primary\" | \"neutral\" | \"ghost\" | \"danger\"",
+          "description": "Visual variant",
+          "defaultValue": "primary"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.hover"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.3"
+          },
+          {
+            "cssProperty": "gap",
+            "tokenPath": "spacing.5"
+          },
+          {
+            "cssProperty": "border-radius",
+            "tokenPath": "radius.md"
+          },
+          {
+            "cssProperty": "font-size",
+            "tokenPath": "font.size.sm"
+          },
+          {
+            "cssProperty": "font-weight",
+            "tokenPath": "font.weight.medium"
+          }
+        ],
+        "usage": "Reach for Button to trigger form submissions, confirm destructive operations, or navigate between views. Use primary for the main call-to-action in a viewport—like a checkout confirmation or save operation. Reserve ghost for secondary actions in dense interfaces where visual hierarchy matters, such as cancel buttons alongside a primary action.",
+        "never": "Don't nest interactive elements inside Button — it breaks keyboard navigation and creates ARIA role conflicts. Use ButtonGroup or a toolbar pattern instead.",
+        "a11y": "Button must have role=\"button\" when implemented as a div, or use native <button> element. Keyboard users must activate it via Space and Enter keys (WCAG 2.1 level A, section 2.1.1).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-card": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-card",
+      "name": "Card",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-card--default",
+          "name": "default",
+          "snippet": "const Default = () => <Card />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-card--elevated",
+          "name": "elevated",
+          "snippet": "const Elevated = () => <Card variant=\"elevated\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-card--outlined",
+          "name": "outlined",
+          "snippet": "const Outlined = () => <Card variant=\"outlined\" />;"
+        }
+      ],
+      "import": "import { Card } from \"@your-org/design-system\";",
+      "description": "Card groups related content in a contained, self-contained surface.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"elevated\" | \"outlined\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Card to establish visual hierarchy and separate distinct content regions. Choose Card for feature highlights, product listings, settings panels, or any content that benefits from spatial isolation. Cards create breathing room in dense layouts and signal that content is independent.",
+        "never": "Don't nest Cards within Cards — this creates visual confusion about content hierarchy. Use a layout component like Stack instead.",
+        "a11y": "Card must have role=\"region\" with an accompanying aria-labelledby attribute pointing to a heading element within the card, unless the card is purely decorative or its purpose is obvious from context.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox",
+      "name": "Checkbox",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox--unchecked",
+          "name": "unchecked",
+          "snippet": "const Unchecked = () => <Checkbox variant=\"unchecked\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox--checked",
+          "name": "checked",
+          "snippet": "const Checked = () => <Checkbox variant=\"checked\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox--indeterminate",
+          "name": "indeterminate",
+          "snippet": "const Indeterminate = () => <Checkbox variant=\"indeterminate\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-checkbox--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Checkbox variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Checkbox } from \"@your-org/design-system\";",
+      "description": "Checkbox presents a binary selection control that toggles between checked and unchecked states, with support for indeterminate states in hierarchical contexts.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"unchecked\" | \"checked\" | \"indeterminate\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "unchecked"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Checkbox when users need to select one or more independent options from a list, such as notification preferences or filter criteria. Prefer Checkbox over Radio when multiple selections are valid. Deploy indeterminate Checkbox for parent-level selection in nested lists where child items have mixed selection states.",
+        "never": "Don't use Checkbox for mutually exclusive options — this violates expected user behavior and creates confusion. Use Radio instead.",
+        "a11y": "Checkbox must expose role=\"checkbox\" with aria-checked reflecting true, false, or mixed. Space key toggles state; checkbox remains keyboard accessible via Tab and shift+Tab navigation.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-input": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-input",
+      "name": "Input",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-input--default",
+          "name": "default",
+          "snippet": "const Default = () => <Input />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-input--error",
+          "name": "error",
+          "snippet": "const Error = () => <Input variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-input--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Input variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Input } from \"@your-org/design-system\";",
+      "description": "Input collects single-line text data from users with optional validation states.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Input for straightforward text entry in forms, search interfaces, and inline editing. Choose Input over Textarea for bounded content like usernames, emails, or transaction IDs. Pair with error variant when validation fails to provide immediate, scoped feedback.",
+        "never": "Don't use Input for multi-line text — the component is optimized for single lines and will truncate or behave unexpectedly with line breaks. Use Textarea instead.",
+        "a11y": "Input must have role=\"textbox\" and support standard keyboard navigation (Home, End, arrow keys). Associate a label using aria-labelledby or a native <label> element to meet WCAG 1.3.1 (Info and Relationships).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-modal": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-modal",
+      "name": "Modal",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-modal--default",
+          "name": "default",
+          "snippet": "const Default = () => <Modal />;"
+        }
+      ],
+      "import": "import { Modal } from \"@your-org/design-system\";",
+      "description": "Modal presents focused content that demands user interaction before returning to the underlying page.",
+      "props": {},
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Modal for critical decisions, confirmations, or self-contained tasks that require full attention—such as deleting an account, authorizing a payment, or completing a multi-step form. Modal interrupts workflow intentionally; reserve it for moments where context switching is necessary and acceptable. Avoid Modal for supplementary information or optional actions that users might want to reference alongside page content.",
+        "never": "Don't allow users to dismiss Modal by clicking the backdrop — users lose unsaved changes without explicit confirmation. Use a Dialog with an explicit close button or confirmation step instead.",
+        "a11y": "Modal must implement role=\"dialog\" with aria-modal=\"true\" and manage focus: trap keyboard focus within the component and restore it to the trigger element on close (WCAG 2.1 2.4.3).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-navigation": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-navigation",
+      "name": "Navigation",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-navigation--default",
+          "name": "default",
+          "snippet": "const Default = () => <Navigation />;"
+        }
+      ],
+      "import": "import { Navigation } from \"@your-org/design-system\";",
+      "description": "Navigation organizes and communicates the primary sections of an application through a persistent or persistent-on-demand menu structure.",
+      "props": {},
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Navigation as the primary entry point for moving between major application sections, such as Dashboard, Settings, and Billing. Navigation works well in applications with 3-8 top-level destinations; for deeper hierarchies, pair it with secondary navigation. Reserve Navigation for structural routes that form the backbone of your information architecture, not for actions or contextual toggles.",
+        "never": "Don't include more than one active section simultaneously — it destroys the user's mental model of where they are. Use inactive states to clearly show which sections are available but not currently active.",
+        "a11y": "Navigation must have role=\"navigation\" and contain a list (ul/ol) of links with aria-current=\"page\" on the active item to satisfy WCAG 2.1 SC 1.3.1 (Info and Relationships).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-select": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-select",
+      "name": "Select",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-select--default",
+          "name": "default",
+          "snippet": "const Default = () => <Select />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-select--error",
+          "name": "error",
+          "snippet": "const Error = () => <Select variant=\"error\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-select--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Select variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Select } from \"@your-org/design-system\";",
+      "description": "Select presents a list of mutually exclusive options in a compact, closed state until activated.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"error\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Reach for Select when users must choose one option from a predefined list of five or more items. Use Select for country selection during account signup, filtering datasets by category, or choosing a timezone in settings. Reserve Checkbox or Radio for lists under five items where space permits showing all options simultaneously.",
+        "never": "Don't use Select as a replacement for a Radio group when options are fewer than five — the cognitive load of an extra interaction step outweighs any space savings. Use Radio instead.",
+        "a11y": "Apply role=\"listbox\" to the trigger element and role=\"option\" to each menu item. Support arrow key navigation within the open menu and Escape to close without selection, per WCAG 2.1 criterion 2.1.1 (Keyboard).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-table": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-table",
+      "name": "Table",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-table--default",
+          "name": "default",
+          "snippet": "const Default = () => <Table />;"
+        }
+      ],
+      "import": "import { Table } from \"@your-org/design-system\";",
+      "description": "Table organizes structured data into rows and columns for comparison and analysis.",
+      "props": {},
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Table when displaying datasets that benefit from columnar organization, such as user lists, transaction histories, or configuration inventories. Tables excel when users need to scan, filter, or sort information across multiple dimensions. Avoid tables for simple two-column key-value pairs; prefer Definition List or Stacked layouts on mobile instead.",
+        "never": "Don't use tables for layout or spacing purposes — it creates semantic confusion and breaks assistive technology parsing. Use CSS Grid or Flexbox instead.",
+        "a11y": "Implement role=\"table\" with role=\"row\" on each row, role=\"columnheader\" on headers, and role=\"gridcell\" on data cells. Ensure keyboard navigation with arrow keys for cell traversal (WCAG 2.1 Level AA).",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-tabs": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-tabs",
+      "name": "Tabs",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-tabs--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tabs />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-tabs--pills",
+          "name": "pills",
+          "snippet": "const Pills = () => <Tabs variant=\"pills\" />;"
+        }
+      ],
+      "import": "import { Tabs } from \"@your-org/design-system\";",
+      "description": "Tabs organize related content into separate views within a single context.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"default\" | \"pills\"",
+          "description": "Visual variant",
+          "defaultValue": "default"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use tabs to reduce cognitive load when presenting multiple categories of related information—settings panels, product documentation sections, or account management workflows. Reserve tabs for content that users benefit from comparing side-by-side; if users rarely switch between sections, consider sequential navigation instead. Tabs work best when you have 2–6 options; beyond that, consider alternative patterns.",
+        "never": "Don't nest tabs within tabs — this fractures information hierarchy and creates navigation ambiguity. Use a single-level tab structure instead.",
+        "a11y": "Implement tablist role on the container, tab role on triggers, and tabpanel role on content sections. Support arrow key navigation (left/right) to move between tabs and Home/End to jump to first/last tab per ARIA Authoring Practices Guide 1.2.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-toggle": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-toggle",
+      "name": "Toggle",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-toggle--on",
+          "name": "on",
+          "snippet": "const On = () => <Toggle variant=\"on\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-toggle--off",
+          "name": "off",
+          "snippet": "const Off = () => <Toggle variant=\"off\" />;"
+        },
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-toggle--disabled",
+          "name": "disabled",
+          "snippet": "const Disabled = () => <Toggle variant=\"disabled\" />;"
+        }
+      ],
+      "import": "import { Toggle } from \"@your-org/design-system\";",
+      "description": "Toggle switches a single boolean state between on and off.",
+      "props": {
+        "variant": {
+          "required": false,
+          "type": "\"on\" | \"off\" | \"disabled\"",
+          "description": "Visual variant",
+          "defaultValue": "on"
+        }
+      },
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Toggle for binary settings where the state change is immediate and doesn't require additional confirmation. Common contexts include feature flags in account settings, notification preferences, or inline feature activation. Reach for Toggle only when the consequence of switching is obvious; if users need to see results before confirming, use a checkbox with a submit button instead.",
+        "never": "Don't use Toggle to replace radio buttons or select menus for multi-option choices — Toggle is strictly binary and will confuse users when more than two states exist. Use RadioGroup or Select instead.",
+        "a11y": "Implement role=\"switch\" with aria-checked reflecting current state. Toggle must be keyboard accessible via Space or Enter to change state and Tab to focus, per WCAG 2.1 Level AA keyboard accessibility.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    },
+    "basalt-run-an-news-website-for-ai-research-and-news-design-system-tooltip": {
+      "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-tooltip",
+      "name": "Tooltip",
+      "path": null,
+      "stories": [
+        {
+          "id": "basalt-run-an-news-website-for-ai-research-and-news-design-system-tooltip--default",
+          "name": "default",
+          "snippet": "const Default = () => <Tooltip />;"
+        }
+      ],
+      "import": "import { Tooltip } from \"@your-org/design-system\";",
+      "description": "Tooltip displays brief, contextual information on hover or focus above interactive elements.",
+      "props": {},
+      "basalt": {
+        "projectId": "88df1225-f587-46bb-bdea-70a2a6802dd8",
+        "projectSlug": "basalt-run-an-news-website-for-ai-research-and-news-design-system",
+        "tokenMappings": [
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.action.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.surface.default"
+          },
+          {
+            "cssProperty": "color",
+            "tokenPath": "color.text.default"
+          },
+          {
+            "cssProperty": "border-color",
+            "tokenPath": "color.border.default"
+          }
+        ],
+        "usage": "Use Tooltip to clarify icon buttons, abbreviations, or disabled form fields without cluttering the interface. Pair with icon buttons in toolbars to explain their function, or surface keyboard shortcuts for power users. Avoid Tooltip for essential information—if users need it to understand the interface, use persistent labels instead.",
+        "never": "Don't display critical errors or form validation messages in Tooltip — users on touch devices cannot access hover states. Use Alert or inline error text instead.",
+        "a11y": "Implement role=\"tooltip\" on the tooltip element and aria-describedby on the trigger to associate them. Ensure keyboard users can access the tooltip by triggering it on focus, not hover alone.",
+        "wcagCriteria": [],
+        "ariaRole": null,
+        "minTouchTarget": null,
+        "figmaNodeId": null,
+        "updatedAt": "2026-03-28T03:18:50.221972+00:00"
+      }
+    }
+  }
+}
