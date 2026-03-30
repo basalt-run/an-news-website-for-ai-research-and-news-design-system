@@ -322,5 +322,45 @@
       "$type": "shadow",
       "$value": "0 20px 25px rgba(0, 0, 0, 0.15)"
     }
+  },
+  "typography": {
+    "fontSize": {
+      "2xs": {
+        "$type": "dimension",
+        "$value": "10px"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "13px"
+      },
+      "base": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "25px"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "31px"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "39px"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "49px"
+      },
+      "5xl": {
+        "$type": "dimension",
+        "$value": "61px"
+      }
+    }
   }
 }
