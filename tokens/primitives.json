@@ -220,7 +220,7 @@
   "spacing": {
     "0": {
       "$type": "dimension",
-      "$value": "0px"
+      "$value": "1px"
     },
     "1": {
       "$type": "dimension",
